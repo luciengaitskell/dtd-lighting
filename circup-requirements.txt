@@ -1,0 +1,4 @@
+adafruit_neopxl8==0.2.2
+adafruit_pioasm==0.7.10
+adafruit_pixelbuf==2.0.2
+adafruit_led_animation==2.7.2
