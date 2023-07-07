@@ -1,13 +1,9 @@
-import time
 from lights.strip import pixels
+from lights.animations.strobe import Strobe
 
-# RGBW
-colors = [(0x00, 0x00, 0x00, 0xFF), (0x00, 0x00, 0x00, 0x00)]
 hz = 10
 
+anim = Strobe(pixels, hz, (0, 0, 0, 255))
 print("Running at {}Hz".format(hz))
 while True:
-    for c in colors:
-        pixels.fill(c)
-        pixels.show()
-        time.sleep(1 / (len(colors) * hz))
+    anim.animate()
