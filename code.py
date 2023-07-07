@@ -14,7 +14,7 @@ pixels = NeoPxl8(
     num_pixels,
     num_strands=num_strands,
     auto_write=False,
-    brightness= 1, # 0.50,
+    brightness=1,  # 0.50,
     bpp=4,
 )
 
