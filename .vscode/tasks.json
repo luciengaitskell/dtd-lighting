@@ -6,7 +6,7 @@
         {
             "label": "circuitpy",
             "type": "shell",
-            "command": "cp *.py /Volumes/CIRCUITPY",
+            "command": "rsync -a --prune-empty-dirs --include '*/' --include '*.py' --exclude '*' . /Volumes/CIRCUITPY",
             "problemMatcher": []
         }
     ]
