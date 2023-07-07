@@ -1,7 +1,6 @@
 import time
 import board
 from adafruit_neopxl8 import NeoPxl8
-import rainbowio
 
 # Customize for your strands here
 num_strands = 8
