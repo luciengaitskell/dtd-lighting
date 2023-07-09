@@ -1,9 +1,8 @@
 from lights.strip import pixels
-from lights.animations.strobe import Strobe
+from lights.animations.ryde import KniteRyde
 
-hz = 10
 
-anim = Strobe(pixels, hz, (0, 0, 0, 1.0))
-print("Running at {}Hz".format(hz))
+anim = KniteRyde(pixels, 0.05, (0, 0, 0, 0.4))
+
 while True:
     anim.animate()
