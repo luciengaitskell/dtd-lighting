@@ -1,8 +1,8 @@
 from lights.strip import pixels
-from lights.animations.ryde import KniteRyde
+from lights.animations.bounce import Bounce
 
 
-anim = KniteRyde(pixels, 0.05, (0, 0, 0, 0.4))
+anim = Bounce(pixels, 0.01, (200, 0, 0, 0))
 
 while True:
     anim.animate()
